@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="GiveU.Sales" parallel="false" configfailurepolicy ="continue">
+    <test name="登录" preserver-order="true" verbose="2">
+      <!-- 访问相关测试数据 --> 
+      ---------------------------------------------------------------------------------------------------
+        <parameter name="取消合同" value="update cs_credit set STATUS='t' where ID_PERSON=15125203" />
+        <parameter name="网站地址" value="http://10.10.11.132:3012/Account/LogOn" />
+        <parameter name="访问成功检查点"   value="html/body/div[2]/p/a" />
+        <parameter name="访问成功预期值"   value="达飞金融销售提单系统" />
+        <parameter name="访问失败提示值" value="访问失败(预期结果和实际结果不一致)" />
+      ---------------------------------------------------------------------------------------------------
+      <!-- 登录相关测试数据 --> 
+        <parameter name="用户名选项框" value="html/body/div[1]/form/div[1]/input" />
+        <parameter name="密码选项框" value="html/body/div[1]/form/div[2]/input" />
+        <parameter name="验证码选项框"   value="html/body/div[1]/form/div[3]/input" />
+        <parameter name="登录按钮"   value=".//*[@id='saveSubmit']" />
+        <parameter name="用户名" value="666666" />
+        <parameter name="密码" value="612425" />  
+        <parameter name="验证码" value="0" />
+        <parameter name="登录成功检查点"   value=".//*[@id='main-menu']/li[2]/a" />
+        <parameter name="登录成功预期值"   value="我的申请" />
+        <parameter name="登录失败提示值" value="登录失败(预期结果和实际结果不一致)" />
+      ---------------------------------------------------------------------------------------------------
+      <!-- 执行的Case -->     
+        <classes>
+            <class name="TestCases.LoginTest">
+                <methods>
+                    <exclude name="Case0" />
+                    <include name="Case1" />
+                    <include name="Case2" />
+                    <exclude name="" />
+                </methods>
+             </class>
+        </classes>
+    </test><!--Test-->
+    ------------------------------------------------------------------------------------------------------    
+    <!-- 调用的监听 -->    
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+    </listeners>      
+</suite><!--Suite-->

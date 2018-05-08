@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="购买系列B手机"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="4.010">
+  <properties />
+  
+  
+            <testcase name="case0" time="0.546" classname="TestCases.TestUnitDemo" />
+                <testcase name="case2" time="2.138" classname="TestCases.TestUnitDemo" />
+                <testcase name="case1" time="1.326" classname="TestCases.TestUnitDemo" />
+      
+</testsuite>

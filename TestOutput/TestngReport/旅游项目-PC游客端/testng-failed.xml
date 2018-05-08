@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Failed suite [旅游项目-PC游客端]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.jmoney.xiyuyou.service.ExtentReportGenerateService"/>
+  </listeners>
+  <test thread-count="5" verbose="3" name="用户自动购买门票流程" time-out="60000">
+    <classes>
+      <class name="TestCases.Tourists_Purchase_Tickets">
+        <methods>
+          <include name="case1"/>
+          <include name="case2"/>
+          <include name="case3"/>
+          <include name="case4"/>
+          <include name="case5"/>
+          <include name="case6"/>
+          <include name="case7"/>
+          <include name="case8"/>
+          <include name="case9"/>
+          <include name="case_10"/>
+          <exclude name="case0"/>
+          <exclude name=""/>
+        </methods>
+      </class> <!-- TestCases.Tourists_Purchase_Tickets -->
+    </classes>
+  </test> <!-- 用户自动购买门票流程 -->
+  <test name="用户自动购买门票流程(failed)">
+    <classes>
+      <class name="TestCases.Tourists_Purchase_Tickets">
+        <methods>
+          <include name="TearDown"/>
+          <include name="case6"/>
+          <include name="case7"/>
+          <include name="case4"/>
+          <include name="case5"/>
+          <include name="stup"/>
+          <include name="case8"/>
+          <include name="case9"/>
+          <include name="case_10"/>
+        </methods>
+      </class> <!-- TestCases.Tourists_Purchase_Tickets -->
+    </classes>
+  </test> <!-- 用户自动购买门票流程(failed) -->
+</suite> <!-- Failed suite [旅游项目-PC游客端] -->
