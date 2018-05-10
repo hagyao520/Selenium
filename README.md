@@ -2,7 +2,7 @@
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Selenium
-![](https://static.oschina.net/uploads/space/2018/0508/143958_10Jk_3854545.png)
+![](https://testerhome.com/uploads/photo/2018/bd823f74-45b4-4f6f-9d49-1074d1acadd4.png!large))
 
     Selenium是一个用于Web应用程序的自动化测试工具，直接运行在浏览器中，就像真正的用户在操作一样
         •  支持的浏览器包括IE、Mozilla Firefox、Google Chrome等
@@ -145,12 +145,12 @@
 
 ### 四、执行用例
  - 编写完对应测试用例类【GiteeLogin.java】，和测试脚本【GiteeLogin.xml】后，在IDE集成开发环境下选择GiteeLogin.java右键使用TestNG运行即可
-![](https://static.oschina.net/uploads/space/2018/0508/142732_o8vk_3854545.png)
+![](https://testerhome.com/uploads/photo/2018/282186b8-c262-48b2-93b9-bc6ef587adbb.png!large)
 
 ### 五、测试报告
  - 测试报告分为两种，一种是TestNG自带的TestngReport测试报告，另外一种则是调用ExtentReports生成的报告，第二种更加美观
  
-### [TestngReport](https://static.oschina.net/uploads/space/2018/0508/143756_FImL_3854545.png)
+#### [TestngReport](https://testerhome.com/uploads/photo/2018/b274b788-861c-4660-9702-47737d61f76b.png!large)
     <?xml version="1.0" encoding="UTF-8"?>
     <suite name="Selenium测试报告" parallel="false" configfailurepolicy ="continue">
         <test name="码云自动登录流程" junit="false" verbose="3" parallel="false" thread-count="5" annotations="javadoc" time-out="60000" enabled="true" skipfailedinvocationcounts="true" preserve-order="true" allow-return-values="true">
@@ -170,9 +170,9 @@
             <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
         </listeners>      
     </suite>
-![](https://static.oschina.net/uploads/space/2018/0508/143756_FImL_3854545.png)
+![](https://testerhome.com/uploads/photo/2018/b274b788-861c-4660-9702-47737d61f76b.png!large)
 
-### [ExtentReports](https://static.oschina.net/uploads/space/2018/0508/143811_aVj2_3854545.png)
+#### [ExtentReports](https://testerhome.com/uploads/photo/2018/e3903a1f-0cf5-43f8-9cb5-42206c50f678.png!large)
     <?xml version="1.0" encoding="UTF-8"?>
     <suite name="Suite" verbose="1" preserve-order="true" parallel="false">
         <suite-files>
@@ -186,18 +186,18 @@
     </suite>
  - 第二种测种试报告，需要翻墙才能正常显示，否则页面显示乱码，因为是国外的东西
  - 或者在C:\Windows\System32\drivers\etc    host文件末尾添加151.139.237.11   cdn.rawgit.com
-![](https://static.oschina.net/uploads/space/2018/0508/143811_aVj2_3854545.png)
+ ![](https://testerhome.com/uploads/photo/2018/e3903a1f-0cf5-43f8-9cb5-42206c50f678.png!large)
 
  ---
 ### 六、感谢
 #### 如果您觉得这个产品对您有用，您可以捐赠下我，让我有理由继续下去，非常感谢。
 ![](https://static.oschina.net/uploads/space/2018/0508/150439_R9a6_3854545.png)
 
-非常感谢您花费时间阅读，祝您在这里记录、阅读、分享愉快！
-欢迎留言评论，有问题也可以联系我或者加群交流...
+**非常感谢您花费时间阅读，祝您在这里记录、阅读、分享愉快！**
+**欢迎留言评论，有问题也可以联系我或者加群交流....**
 
-作者：@刘智King            
-QQ：1306086303
-QQ群：126325132         
+作者：[@刘智King](http://shang.qq.com/email/stop/email_stop.html?qq=1306086303&sig=a1c657365db7e82805ea4b2351081fc3ebcde159f8ae49b1&tttt=1)
+QQ：1306086303     
 Email：hagyao520@163.com
 
+> QQ官方交流群 <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=346d11a1a76d05086cd48bc8249126f514248479b50f96288189ab5ae0ca7ba5"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="126325132" title="126325132"></a>
