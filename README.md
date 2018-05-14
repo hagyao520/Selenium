@@ -10,6 +10,7 @@
         •  跨平台，如Windows、Linux、iOS、Andriod等
         •  开源免费
 
+ ---
 ### 框架介绍
     Java + Selenium + Maven + TestNG + JDBC + Xml+ Git + +Ant + Jenkins 
         •  使用Java作为项目编程语言
@@ -22,6 +23,7 @@
         •  使用Ant作为Java的build打包工具，方便项目代码打包
         •  使用Jenkins作为自动化持续集成平台，方便自动编译，自动打包，自动运行测试脚本，邮件发送测试报告
 
+ ---
 ### 主要功能
     1.  实现了基于Selenium，WebDriver等常用操作方法的二次封装，包括（滑动，点击，输入，元素定位）等，使用起来更简便
     2.  实现了基于Windows操作系统的cmd常用DOS命令的快速调用
@@ -34,6 +36,7 @@
     9.  实现了常用API接口请求操作，包含（POST，GET）等，可直接在测试脚本中调用，只需传递对应参数即可，满足多种测试需求
     10. 实现了基于ExtentReports，TestNG生成的测试报告二次美化功能，界面更美观，内容清晰
 
+ ---
 ### 环境配置
    1. [JDK1.7以上](http://www.Oracle.com/technetwork/Java/javase/downloads/index.html)
    2. [Eclipse](http://www.eclipse.org/downloads)/[IDEA](https://www.jetbrains.com/idea/)
@@ -51,9 +54,11 @@
  - 建议Selenium版本对应Firefox丨Chrome（2.53.0丨47.0.2丨65.0.3325.146）
  - Python环境下需要下载Geckodriver和ChromeDriver，且版本需对应，具体安装参考：https://blog.csdn.net/huilan_same/article/details/51896672
   
+ ---
 ### 注意事项
  - 工程项目编码需要设置成UTF-8，否则会出现中文乱码情况
 
+ ---
 ### 一、创建测试对象类，例如【GiteeLogin.java】
     package TestCases;
 
@@ -94,6 +99,7 @@
         }
     }
 
+ ---
 ### 二、创建测试脚本用例，例如【GiteeLogin.xml】
     <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
     <unit id="GiteeLogin" desc="码云自动登录流程的测试场景点">
@@ -127,6 +133,7 @@
 
   - 具体脚本编方法请参考: https://pan.baidu.com/s/1fdMMGrr9XY6lJdXCv-1AYw
 
+ ---
 ### 三、火狐浏览器服务配置
     public static void AppointFirefoxDriver() throws Exception {
           File file = new File(ConfigUtil.getProperty("webdriver.profile", Constants.CONFIG_COMMON));
@@ -143,10 +150,12 @@
 
  - 测试执行时需要在common.properties文件中，指定浏览器和浏览器配置文件，当前为火狐浏览器安装路径，和火狐浏览器配置文件路径
 
+ ---
 ### 四、执行用例
  - 编写完对应测试用例类【GiteeLogin.java】，和测试脚本【GiteeLogin.xml】后，在IDE集成开发环境下选择GiteeLogin.java右键使用TestNG运行即可
 ![](https://testerhome.com/uploads/photo/2018/282186b8-c262-48b2-93b9-bc6ef587adbb.png!large)
 
+ ---
 ### 五、测试报告
  - 测试报告分为两种，一种是TestNG自带的TestngReport测试报告，另外一种则是调用ExtentReports生成的报告，第二种更加美观
  
@@ -172,6 +181,7 @@
     </suite>
 ![](https://testerhome.com/uploads/photo/2018/b274b788-861c-4660-9702-47737d61f76b.png!large)
 
+ ---
 #### [ExtentReports](https://testerhome.com/uploads/photo/2018/e3903a1f-0cf5-43f8-9cb5-42206c50f678.png!large)
     <?xml version="1.0" encoding="UTF-8"?>
     <suite name="Suite" verbose="1" preserve-order="true" parallel="false">
@@ -187,10 +197,17 @@
  - 第二种测种试报告，需要翻墙才能正常显示，否则页面显示乱码，因为是国外的东西
  - 或者在C:\Windows\System32\drivers\etc    host文件末尾添加151.139.237.11   cdn.rawgit.com
  ![](https://testerhome.com/uploads/photo/2018/e3903a1f-0cf5-43f8-9cb5-42206c50f678.png!large)
-
+ 
  ---
-### 六、感谢
-#### 如果您觉得这个产品对您有用，您可以捐赠下我，让我有理由继续下去，非常感谢。
+### 六、Jnekins持续集成：
+![](https://testerhome.com/uploads/photo/2018/6c209373-80f5-47f3-a9d7-e7dbfe3ea523.png!large)
+![](https://testerhome.com/uploads/photo/2018/e24ab598-67da-471d-a924-cc5360c92ec7.png!large)
+ - 搭建Jenkins环境，具体请参考: https://blog.csdn.net/wuxuehong0306/article/details/50016547
+ - 配置Jenkins自动化持续集成项目，即可实现远程服务器自动（构建，编译，打包）运行脚本，发送邮件测试报告等
+ 
+ ---
+### 七、感谢
+#### 如果您觉得这个框架不错，您可以捐赠下我，让我有理由继续下去。
 ![](https://testerhome.com/uploads/photo/2018/26d494a6-7b4f-4b69-8db1-0a3b45f886b7.png!large)
 
 **非常感谢您花费时间阅读，祝您在这里记录、阅读、分享愉快！**
