@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Failed suite [乐客用户端测试报告]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.jmoney.luckeylink.service.ExtentReportGenerateService"/>
+  </listeners>
+  <test thread-count="5" verbose="3" name="乐客用户端自动登录流程" time-out="60000">
+    <classes>
+      <class name="TestCases.LuckeyLogin">
+        <methods>
+          <include name="case1"/>
+          <include name="case2"/>
+          <include name="case4"/>
+          <exclude name="case3"/>
+          <exclude name=""/>
+        </methods>
+      </class> <!-- TestCases.LuckeyLogin -->
+    </classes>
+  </test> <!-- 乐客用户端自动登录流程 -->
+  <test thread-count="5" verbose="3" name="乐客用户端自动开门流程" time-out="60000">
+    <classes>
+      <class name="TestCases.LuckeyOpenDoor">
+        <methods>
+          <include name="case1"/>
+          <include name="case2"/>
+          <include name="case3"/>
+          <exclude name=""/>
+        </methods>
+      </class> <!-- TestCases.LuckeyOpenDoor -->
+    </classes>
+  </test> <!-- 乐客用户端自动开门流程 -->
+  <test name="乐客用户端自动登录流程(failed)">
+    <classes>
+      <class name="TestCases.LuckeyLogin">
+        <methods>
+          <include name="stup"/>
+          <include name="case1"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- TestCases.LuckeyLogin -->
+      <class name="TestCases.LuckeyOpenDoor">
+        <methods>
+          <include name="stup"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- TestCases.LuckeyOpenDoor -->
+    </classes>
+  </test> <!-- 乐客用户端自动登录流程(failed) -->
+  <test name="乐客用户端自动开门流程(failed)">
+    <classes>
+      <class name="TestCases.LuckeyLogin">
+        <methods>
+          <include name="stup"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- TestCases.LuckeyLogin -->
+      <class name="TestCases.LuckeyOpenDoor">
+        <methods>
+          <include name="stup"/>
+          <include name="case1"/>
+          <include name="case3"/>
+          <include name="TearDown"/>
+          <include name="case2"/>
+        </methods>
+      </class> <!-- TestCases.LuckeyOpenDoor -->
+    </classes>
+  </test> <!-- 乐客用户端自动开门流程(failed) -->
+</suite> <!-- Failed suite [乐客用户端测试报告] -->

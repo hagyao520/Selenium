@@ -1,0 +1,187 @@
+<html>
+<head>
+<title>TestNG:  自动新增小区流程</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>自动新增小区流程</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Sep 28 17:38:11 CST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>52 seconds (52835 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.New_District_Process.Precondition()'><b>Precondition</b><br>Test class: TestCases.New_District_Process<br/>
+<a href="#Output-1065254601" onClick='toggleBox("Output-1065254601", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1065254601" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1065254601">
+验证在数据库中，删除对应小区后，可以正常删除成功<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>TestCases.New_District_Process@2ed94a8b</td></tr>
+<tr>
+<td title='TestCases.New_District_Process.case1()'><b>case1</b><br>Test class: TestCases.New_District_Process<br/>
+<a href="#Output-2019763965" onClick='toggleBox("Output-2019763965", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2019763965" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2019763965">
+验证在火狐浏览器中，输入乐客管理后台域名后，可以正常进入钉钉登录界面<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>TestCases.New_District_Process@2ed94a8b</td></tr>
+<tr>
+<td title='TestCases.New_District_Process.case2()'><b>case2</b><br>Test class: TestCases.New_District_Process<br/>
+<a href="#Output-1291313956" onClick='toggleBox("Output-1291313956", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1291313956" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1291313956">
+验证在登录界面，输入正确的账号和密码，点击登录按钮后，可以正常登陆成功并跳转至首页主界面<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>TestCases.New_District_Process@2ed94a8b</td></tr>
+<tr>
+<td title='TestCases.New_District_Process.case3()'><b>case3</b><br>Test class: TestCases.New_District_Process<br/>
+<a href="#Output-1144409260" onClick='toggleBox("Output-1144409260", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1144409260" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1144409260">
+验证在地址管理中，点击新增小区/城中村按钮后，可以正常进入新增小区/城中村选择界面<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>TestCases.New_District_Process@2ed94a8b</td></tr>
+<tr>
+<td title='TestCases.New_District_Process.case4()'><b>case4</b><br>Test class: TestCases.New_District_Process<br/>
+<a href="#Output-1977482648" onClick='toggleBox("Output-1977482648", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1977482648" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1977482648">
+验证在新增小区/城中村选择界面，选择小区，点击下一步按钮后，可以正常进入新增小区界面<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>TestCases.New_District_Process@2ed94a8b</td></tr>
+<tr>
+<td title='TestCases.New_District_Process.case5()'><b>case5</b><br>Test class: TestCases.New_District_Process<br/>
+<a href="#Output-1801824777" onClick='toggleBox("Output-1801824777", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1801824777" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1801824777">
+验证在新增小区界面，选择对应大区域，输入小区，楼栋等信息，点击确定按钮后，可以正常新增小区成功，并弹出新增成功界面<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>TestCases.New_District_Process@2ed94a8b</td></tr>
+<tr>
+<td title='TestCases.New_District_Process.case6()'><b>case6</b><br>Test class: TestCases.New_District_Process<br/>
+<a href="#Output-1065575778" onClick='toggleBox("Output-1065575778", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1065575778" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1065575778">
+验证在地址管理界面，选择对应地域属性(省份，城市，区县，街道)，点击查询按钮后，可以正常搜索出该地域下的小区信息<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>TestCases.New_District_Process@2ed94a8b</td></tr>
+<tr>
+<td title='TestCases.New_District_Process.case7()'><b>case7</b><br>Test class: TestCases.New_District_Process<br/>
+<a href="#Output-988450513" onClick='toggleBox("Output-988450513", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-988450513" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-988450513">
+验证在地址管理界面，选择对应小区楼栋，点击新增房号按钮后，可以正常进入新增房间界面<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>TestCases.New_District_Process@2ed94a8b</td></tr>
+<tr>
+<td title='TestCases.New_District_Process.case8()'><b>case8</b><br>Test class: TestCases.New_District_Process<br/>
+<a href="#Output-807442132" onClick='toggleBox("Output-807442132", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-807442132" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-807442132">
+验证在新增房间界面，输入对应房间名称，点击确定按钮后，可以正常新增房间成功<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>TestCases.New_District_Process@2ed94a8b</td></tr>
+</table><p>
+</body>
+</html>

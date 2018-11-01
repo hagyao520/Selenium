@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="百度-搜索自动化测试系统流程"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="7.898">
+  <properties />
+  
+  
+            <testcase name="case2" time="6.945" classname="TestCases.SearchProcess" />
+                <testcase name="case1" time="0.953" classname="TestCases.SearchProcess" />
+      
+</testsuite>

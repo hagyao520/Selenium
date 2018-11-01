@@ -3,24 +3,26 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - Default test</title>
+  <title>Test Results Report - 百度-搜索自动化测试系统流程</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>Default test</h1>
+<h1>百度-搜索自动化测试系统流程</h1>
 <p>
-  Test duration: 19.275s
+  Test duration: 11.272s
 </p>
 
 
 
+
+
   <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">TestCases.Tourists_Purchase_Tickets</td>
+        <td colspan="3" class="group">TestCases.SearchProcess</td>
       </tr>
             
 <tr>
@@ -28,129 +30,36 @@
                   case1
       </td>
   <td class="duration">
-    14.646s
+    0.953s
   </td>
   <td class="result">
         
     
-        
+            <div class="testOutput">
+                        验证在浏览器中，输入百度网站域名后，可以正常访问<br />
+                  </div>
+    
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.reflect.InvocationTargetException</b></a><br />
-    <div class="stackTrace" id="exception-0">
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:498)<br />
-              com.jmoney.xiyuyou.service.RunUnitService.runCase(RunUnitService.java:98)<br />
-              TestCases.Tourists_Purchase_Tickets.case1(Tourists_Purchase_Tickets.java:30)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:498)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:643)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:782)<br />
-              org.testng.TestRunner.run(TestRunner.java:632)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:268)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
-              org.testng.TestNG.run(TestNG.java:1064)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[name=email]&quot;}<br/>
-Command duration or timeout: 10.11 seconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;<br/>
-System info: host: &apos;King&apos;, ip: &apos;10.0.0.90&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;<br/>
-Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
-Session ID: e2941fff-9b40-4588-a285-c140f9e4360f<br/>
-*** Element info: {Using=css selector, value=[name=email]}</a><br />
-        <div class="stackTrace" id="exception-1">
-                      sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-                      sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-                      sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-                      java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
-                      org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
-                      org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)<br />
-                      org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
-                      com.jmoney.xiyuyou.util.SeleniumUtil.getElement(SeleniumUtil.java:87)<br />
-                      com.jmoney.xiyuyou.handler.InputActionHandler.webInput(InputActionHandler.java:22)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-                      java.lang.reflect.Method.invoke(Method.java:498)<br />
-                      com.jmoney.xiyuyou.service.RunUnitService.runCase(RunUnitService.java:98)<br />
-                      TestCases.Tourists_Purchase_Tickets.case1(Tourists_Purchase_Tickets.java:30)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-                      java.lang.reflect.Method.invoke(Method.java:498)<br />
-                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)<br />
-                      org.testng.internal.Invoker.invokeMethod(Invoker.java:643)<br />
-                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)<br />
-                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)<br />
-                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
-                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
-                      org.testng.TestRunner.privateRun(TestRunner.java:782)<br />
-                      org.testng.TestRunner.run(TestRunner.java:632)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br />
-                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)<br />
-                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)<br />
-                      org.testng.SuiteRunner.run(SuiteRunner.java:268)<br />
-                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
-                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)<br />
-                      org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
-                      org.testng.TestNG.run(TestNG.java:1064)<br />
-                      org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br />
-                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)<br />
-                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)<br />
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  case2
+      </td>
+  <td class="duration">
+    6.945s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        验证在百度主界面，搜索栏中输入自动化测试系统，点击回车按钮后，可以正常搜索出对应包含自动化测试系统的信息<br />
                   </div>
-              <b>Caused by: </b> <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[name=email]&quot;}<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;<br/>
-System info: host: &apos;King&apos;, ip: &apos;10.0.0.90&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;<br/>
-Driver info: driver.version: unknown</a><br />
-        <div class="stackTrace" id="exception-2">
-                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/King-liu/AppData/Local/Temp/anonymous4471047808402942675webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)<br />
-                      &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/King-liu/AppData/Local/Temp/anonymous4471047808402942675webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)<br />
-                      &lt;anonymous class&gt;.waitForSyncCallback(resource://services-common/async.js:98)<br />
-                      &lt;anonymous class&gt;.Res__request(resource://services-sync/resource.js:398)<br />
-                      &lt;anonymous class&gt;.Res_get(resource://services-sync/resource.js:425)<br />
-                      &lt;anonymous class&gt;.fetch(resource://services-sync/record.js:50)<br />
-                      &lt;anonymous class&gt;.verifyAndFetchSymmetricKeys(resource://gre/modules/services-sync/service.js:591)<br />
-                      &lt;anonymous class&gt;._remoteSetup(resource://gre/modules/services-sync/service.js:1178)<br />
-                      &lt;anonymous class&gt;.verifyLogin(resource://gre/modules/services-sync/service.js:711)<br />
-                      &lt;anonymous class&gt;.onNotify(resource://gre/modules/services-sync/service.js:977)<br />
-                      &lt;anonymous class&gt;.WrappedNotify(resource://services-sync/util.js:146)<br />
-                      &lt;anonymous class&gt;.WrappedLock(resource://services-sync/util.js:101)<br />
-                      &lt;anonymous class&gt;.WrappedCatch(resource://services-sync/util.js:75)<br />
-                      &lt;anonymous class&gt;.login(resource://gre/modules/services-sync/service.js:988)<br />
-                      &lt;anonymous class&gt;.sync/&lt;(resource://gre/modules/services-sync/service.js:1236)<br />
-                      &lt;anonymous class&gt;.WrappedCatch(resource://services-sync/util.js:75)<br />
-                      &lt;anonymous class&gt;.sync(resource://gre/modules/services-sync/service.js:1232)<br />
-                  </div>
-          </div>
+    
+
       </td>
 </tr>
       </table>
-
-
   
 </body>
 </html>

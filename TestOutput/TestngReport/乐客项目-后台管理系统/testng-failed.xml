@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Failed suite [乐客项目-后台管理系统]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.jmoney.luckeylink.service.ExtentReportGenerateService"/>
+  </listeners>
+  <test thread-count="5" verbose="3" name="自动新增小区流程" time-out="60000">
+    <classes>
+      <class name="TestCases.New_District_Process">
+        <methods>
+          <include name="Precondition"/>
+          <include name="case1"/>
+          <include name="case2"/>
+          <include name="case3"/>
+          <include name="case4"/>
+          <include name="case5"/>
+          <include name="case6"/>
+          <include name="case7"/>
+          <include name="case8"/>
+          <exclude name=""/>
+        </methods>
+      </class> <!-- TestCases.New_District_Process -->
+    </classes>
+  </test> <!-- 自动新增小区流程 -->
+  <test thread-count="5" verbose="3" name="自动新增小区用户流程" time-out="60000">
+    <classes>
+      <class name="TestCases.New_User_Process">
+        <methods>
+          <include name="Precondition"/>
+          <include name="case1"/>
+          <include name="case2"/>
+          <include name="case3"/>
+          <include name="case4"/>
+          <include name="case5"/>
+          <include name="case6"/>
+          <include name="case7"/>
+          <exclude name=""/>
+        </methods>
+      </class> <!-- TestCases.New_User_Process -->
+    </classes>
+  </test> <!-- 自动新增小区用户流程 -->
+  <test name="自动新增小区用户流程(failed)">
+    <classes>
+      <class name="TestCases.New_District_Process">
+        <methods>
+          <include name="stup"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- TestCases.New_District_Process -->
+      <class name="TestCases.New_User_Process">
+        <methods>
+          <include name="case4"/>
+          <include name="case7"/>
+          <include name="TearDown"/>
+          <include name="case6"/>
+          <include name="case5"/>
+          <include name="stup"/>
+        </methods>
+      </class> <!-- TestCases.New_User_Process -->
+    </classes>
+  </test> <!-- 自动新增小区用户流程(failed) -->
+</suite> <!-- Failed suite [乐客项目-后台管理系统] -->

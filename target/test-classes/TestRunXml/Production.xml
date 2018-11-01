@@ -4,6 +4,6 @@
         <suite-file path="JMD_Production.xml"></suite-file>
     </suite-files>
     <listeners>
-        <listener class-name="com.jmoney.xiyuyou.service.ExtentReportGenerateService"></listener>
+        <listener class-name="com.jmoney.jiumiaodai.service.ExtentReportGenerateService"></listener>
     </listeners> 
 </suite>

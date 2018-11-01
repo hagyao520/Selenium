@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="乐客用户端自动开门流程"
+           tests="3"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="29.214">
+  <properties />
+            <testcase name="case3" time="7.276" classname="TestCases.LuckeyOpenDoor">
+                <failure type="java.lang.reflect.InvocationTargetException"
+                  message="(null)"
+              >
+<![CDATA[java.lang.reflect.InvocationTargetException
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  com.jmoney.luckeylink.service.RunUnitService.runCase(RunUnitService.java:85)
+  TestCases.LuckeyOpenDoor.case3(LuckeyOpenDoor.java:42)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+  org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+  org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+  java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+  java.util.concurrent.FutureTask.run(Unknown Source)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+  java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.AssertionError: 开门失败(实际结果和预期结果不一致)  Actual 【没找到对应设备，请你确定在门锁附近】  but found 【开门成功】
+  org.testng.Assert.fail(Assert.java:94)
+  com.jmoney.luckeylink.handler.CheckActionHandler.checkEqualsAndroid(CheckActionHandler.java:152)
+  com.jmoney.luckeylink.handler.CheckActionHandler.androidCheck(CheckActionHandler.java:48)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  com.jmoney.luckeylink.service.RunUnitService.runCase(RunUnitService.java:85)
+  TestCases.LuckeyOpenDoor.case3(LuckeyOpenDoor.java:42)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+  org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+  org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+  java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+  java.util.concurrent.FutureTask.run(Unknown Source)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+  java.lang.Thread.run(Unknown Source)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="case1" time="13.282" classname="TestCases.LuckeyOpenDoor" />
+                <testcase name="case2" time="8.656" classname="TestCases.LuckeyOpenDoor" />
+      
+</testsuite>
